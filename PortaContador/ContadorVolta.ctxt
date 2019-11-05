@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=ContadorVolta
+comment1.params=
+comment1.target=void\ contar()
+comment2.params=
+comment2.target=void\ zerar()
+comment3.params=
+comment3.target=int\ buscarValor()
+numComments=4
