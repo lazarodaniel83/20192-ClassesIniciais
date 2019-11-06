@@ -13,6 +13,11 @@ class ControleEntrada{
         porta.fechar();
     };
     
+    void reset(){
+        porta.fechar();
+        contador.zerar();
+    };    
+    
     int buscarQtdeAberturas(){
         return contador.buscarValor();
     };    
