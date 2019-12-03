@@ -24,6 +24,10 @@ public class Gene{
     
     public Gene clonar(){
         return new Gene(this);
+    }
+    
+    public String toString(){
+        return new Integer(valor).toString();
     }    
     
 }    
