@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Ponto2D
+comment1.params=
+comment1.target=Ponto2D()
+comment2.params=abscissa\ ordenada
+comment2.target=Ponto2D(double,\ double)
+comment3.params=abscissa
+comment3.target=void\ setAbscissa(double)
+comment4.params=ordenada
+comment4.target=void\ setOrdenada(double)
+comment5.params=
+comment5.target=double\ getAbscissa()
+comment6.params=
+comment6.target=double\ getOrdenada()
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8

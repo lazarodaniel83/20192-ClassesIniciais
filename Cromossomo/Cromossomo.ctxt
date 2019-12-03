@@ -16,4 +16,6 @@ comment7.params=cromo
 comment7.target=double\ getSimilaridade(Cromossomo)
 comment8.params=ponto\ cromo
 comment8.target=void\ singlePointCrossover(int,\ Cromossomo)
-numComments=9
+comment9.params=
+comment9.target=java.lang.String\ toString()
+numComments=10

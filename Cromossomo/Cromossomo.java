@@ -54,7 +54,35 @@ public class Cromossomo{
     }  
     
     public void singlePointCrossover(int ponto, Cromossomo cromo){
-        // TODO
-    }    
+        int max = this.size() > cromo.size() ? this.size() : cromo.size();
+        Gene[] meuNovo = new Gene[cromo.size()];
+        Gene[] outroNovo = new Gene[this.size()];
+        int i;
+        
+        for(i = 0; i < ponto; i++){
+            if(i < meuNovo.length)
+                meuNovo[i] = this.getGene(i);
+            if(i < outroNovo.length)    
+                outroNovo[i] = cromo.getGene(i);
+        }    
+        
+        for(; i < max; i++){
+            if(i < meuNovo.length)
+                meuNovo[i] = cromo.getGene(i);
+            if(i < outroNovo.length)  
+                outroNovo[i] = this.getGene(i);
+        }    
+        
+        this.genes = meuNovo;
+        cromo.genes = outroNovo; 
+    }
+    
+    public String toString(){
+        String rep = "[";
+        
+        for(Gene g : this.genes)
+          rep += ((g!=null) ? g : "*");
+        return rep + "]";
+    }   
     
 };

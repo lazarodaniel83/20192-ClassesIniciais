@@ -1,18 +1,29 @@
-class Porta{
-    boolean aberta;
+public class Porta{
+    private boolean aberta;
     
-    void abrir(){
-      aberta = true;  
+    public Porta(boolean aberta){
+        this.setAberta(aberta);
+    }    
+    
+    
+    private void setAberta(boolean aberta){
+      this.aberta = aberta;    
+    }    
+    
+    public void abrir(){
+      this.setAberta(true);  
     };    
     
-    void fechar(){
-      aberta = false;  
+    public void fechar(){
+      this.setAberta(false);
     };    
     
     
-    boolean estaAberta(){
-        return aberta;
-    };    
+    public boolean isAberta(){
+        return this.aberta;
+    };
     
-    
+    public void finalize() throws Exception{
+        System.out.println("Fim de Porta");
+    }    
 };

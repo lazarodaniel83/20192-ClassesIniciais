@@ -1,9 +1,9 @@
 class ControleEntrada{
-    Porta porta = new Porta();
+    Porta porta = new Porta(false);
     ContadorVolta contador = new ContadorVolta();
     
     void abrir(){
-        if(!porta.estaAberta())
+        if(!porta.isAberta())
           contador.contar();
         porta.abrir();  
     };
