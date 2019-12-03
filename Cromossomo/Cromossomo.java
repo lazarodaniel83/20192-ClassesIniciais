@@ -1,6 +1,22 @@
 public class Cromossomo{
     private Gene[] genes;
     
+    public Cromossomo (){
+        this(0);
+    }  
+    
+    public void adicionarGene(Gene gene){
+        Gene[] novo = new Gene[this.genes.length + 1];
+        
+        for(int iCont = 0; iCont < this.size(); iCont++)
+          novo[iCont] = this.getGene(iCont);
+          
+        novo[novo.length - 1] = gene;
+        
+        this.genes = novo;
+    }    
+    
+    
     public Cromossomo (int size){
         this.genes = new Gene[size];
     }    
