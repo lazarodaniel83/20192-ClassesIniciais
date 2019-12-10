@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CampoHarmonico
+comment1.params=value
+comment1.target=CampoHarmonico(char)
+comment2.params=
+comment2.target=char\ getValor()
+numComments=3

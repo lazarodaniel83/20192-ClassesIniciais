@@ -1,13 +1,24 @@
 public class Musica{
+    
+    public static final char DO = 'C';
+    public static final char RE = 'D';
+    public static final char MI = 'E';
+    public static final char FA = 'F';
+    public static final char SOL = 'G';
+    public static final char LA = 'A';
+    public static final char SI = 'B';
+    
     private String titulo;
     private String[] nomesArtistas;
     private long duracao;
     private String genero;
-    private char campoHarmonico;
+    private CampoHarmonico campoHarmonico;
     private String nomeGravadora;
     
+    
+    
     public Musica(String titulo, String[] nomesArtistas, long duracao, String genero,
-                  char campoHarmonico, String nomeGravadora){
+                  CampoHarmonico campoHarmonico, String nomeGravadora){
         this.setTitulo(titulo);
         this.setNomesArtistas(nomesArtistas);
         this.setDuracao(duracao);
@@ -27,13 +38,13 @@ public class Musica{
     
     public double getProximidade(Musica musica){
         double proximidade = 0;
-        proximidade += ((this.getCampoHarmonico() == musica.getCampoHarmonico()) ? 1 : 0);
+        proximidade += ((this.getCampoHarmonico().equals(musica.getCampoHarmonico())) ? 1 : 0);
         proximidade += ((this.getNomeGravadora().equals(musica.getNomeGravadora())) ? 1 : 0);
         proximidade += ((this.getGenero().equals(musica.getGenero())) ? 1 : 0);
         return proximidade + this.getPctArtistasCoincidentes(musica);
     }
     
-    public char getCampoHarmonico(){
+    public CampoHarmonico getCampoHarmonico(){
         return this.campoHarmonico;
     } 
     
@@ -94,7 +105,7 @@ public class Musica{
         this.genero = genero;
     }   
     
-    private void setCampoHarmonico(char campoHarmonico){
+    private void setCampoHarmonico(CampoHarmonico campoHarmonico){
         this.campoHarmonico = campoHarmonico;
     }  
     
