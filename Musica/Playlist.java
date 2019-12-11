@@ -30,6 +30,21 @@ public class Playlist{
         for(Musica musica : this.musicas)
           duracao += musica.getDuracao();
         return duracao;  
-    }    
+    } 
+    
+    public double getProximidade(Musica musica){
+        double proximidade = 0;
+        for(Musica m : this.musicas)
+          if(m.getProximidade(musica) > proximidade)
+            proximidade = m.getProximidade(musica);
+        return proximidade;    
+    }
+    
+    public boolean pertence(Musica musica){
+        for(Musica m : this.musicas)
+          if(m.equals(musica))
+            return true;
+        return false;    
+    };
     
 }
