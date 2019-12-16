@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=MusicaDB
+comment1.params=
+comment1.target=MusicaDB()
+comment2.params=musica
+comment2.target=void\ addMusica(Musica)
+comment3.params=nome\ duracao\ base
+comment3.target=Playlist\ criarSimilar(java.lang.String,\ long,\ Playlist)
+comment4.params=base
+comment4.target=void\ ordenar(Playlist)
+numComments=5
