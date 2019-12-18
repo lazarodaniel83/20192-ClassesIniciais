@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Palavra
+comment1.params=conteudo
+comment1.target=Palavra(java.lang.String)
+comment2.params=conteudo\ palavra
+comment2.target=Palavra(java.lang.String,\ Palavra)
+comment3.params=conteudo
+comment3.target=void\ setConteudo(java.lang.String)
+comment4.params=
+comment4.target=java.lang.String\ getConteudo()
+comment5.params=palavra
+comment5.target=boolean\ equals(Palavra)
+comment6.params=palavra
+comment6.target=boolean\ isSimilar(Palavra)
+comment7.params=palavra
+comment7.target=double\ getSimilaridade(Palavra)
+numComments=8
