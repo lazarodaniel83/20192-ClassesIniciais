@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Via
+comment1.params=tipo\ nome\ extensao\ velocidadeMaxima
+comment1.target=Via(TipoVia,\ java.lang.String,\ double,\ double)
+comment2.params=horario
+comment2.target=double\ getVelocidadeMedia(int)
+comment3.params=horario\ velocidade
+comment3.target=void\ setVelocidadeMedia(int,\ double)
+comment4.params=horario
+comment4.target=double\ getTempoMedioTravessia(int)
+comment5.params=via
+comment5.target=boolean\ equals(Via)
+comment6.params=via
+comment6.target=boolean\ isAdjacente(Via)
+numComments=7

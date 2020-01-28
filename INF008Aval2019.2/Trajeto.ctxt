@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Trajeto
+comment1.params=
+comment1.target=boolean\ isValido()
+comment2.params=hora
+comment2.target=double\ getTempoTotal(int)
+comment3.params=
+comment3.target=double\ getTempoTotal()
+comment4.params=trajeto\ hora
+comment4.target=double\ maisRapido(Trajeto,\ int)
+numComments=5
