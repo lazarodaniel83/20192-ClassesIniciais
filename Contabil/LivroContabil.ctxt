@@ -6,4 +6,6 @@ comment2.params=novo
 comment2.target=void\ addLancamento(Lancamento)
 comment3.params=descricao\ credito\ debito\ valor
 comment3.target=void\ registrarFato(java.lang.String,\ Conta,\ Conta,\ double)
-numComments=4
+comment4.params=
+comment4.target=java.lang.String\ toString()
+numComments=5

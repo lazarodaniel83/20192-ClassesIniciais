@@ -18,6 +18,13 @@
     public void registrarFato(String descricao, Conta credito, 
                               Conta debito, double valor){
       this.addLancamento(new Lancamento(descricao, credito, debito, valor));
-    };    
+    }; 
+    
+    public String toString(){
+        String str = "";
+        for(Lancamento l : this.lancamentos)
+            str += (l + "\n\n");
+        return str;    
+    }    
     
 }

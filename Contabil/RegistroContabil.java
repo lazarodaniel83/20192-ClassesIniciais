@@ -19,12 +19,29 @@ public class RegistroContabil{
         this.cnpjEmpresa = cnpjEmpresa;
     } 
     
+    private String getNomeEmpresa(){
+        return this.nomeEmpresa;
+    }    
+    
+    private String getCNPJEmpresa(){
+        return this.cnpjEmpresa;
+    }     
+    
     public void registrarFato(String descricao, String nomeCredito, 
                               String nomeDebito, double valor){
       this.livro.registrarFato(descricao, this.balanco.findByName(nomeCredito), 
                                this.balanco.findByName(nomeDebito), valor);
       this.balanco.ajustar(nomeCredito, nomeDebito, valor);
-    };                              
+    };  
+    
+    public String toString(){
+        String str =  this.getNomeEmpresa() + " - " + this.getCNPJEmpresa() + "\n";
+        str += "BALANCO\n";
+        str += this.balanco + "\n\n";
+        str += "LANCAMENTOS\n";        
+        str += this.livro + "\n";        
+        return str;
+    }    
     
     
     

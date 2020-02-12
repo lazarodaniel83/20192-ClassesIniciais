@@ -14,6 +14,10 @@ public class Conta{
     public String getNome(){
         return this.nome;
     } 
+
+    public double getSaldo(){
+        return this.valor;
+    } 
     
     public void creditar(double valor){
         
@@ -21,6 +25,10 @@ public class Conta{
     
     public void debitar(double valor){
         
+    } 
+    
+    public String toString(){
+        return this.getNome() + " " + this.getSaldo();
     }    
     
 }

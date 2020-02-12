@@ -10,4 +10,6 @@ comment4.params=descricao
 comment4.target=void\ setDescricao(java.lang.String)
 comment5.params=valor
 comment5.target=void\ setValor(double)
-numComments=6
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

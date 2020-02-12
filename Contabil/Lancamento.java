@@ -16,7 +16,7 @@ public class Lancamento{
     };
     
     private void setDebito(Conta debito){
-        this.credito = debito;
+        this.debito = debito;
     }    
     
     
@@ -26,7 +26,15 @@ public class Lancamento{
     
     private void setValor(double valor){
         this.valor = valor;
-    }     
+    }   
+    
+    public String toString(){
+        String str = this.descricao + "\n";
+        str += ("[C]" + this.credito.getNome() + "\n"); 
+        str += ("[D]" + this.debito.getNome() + "\n");        
+        return str + this.valor;
+    }    
+    
         
     
 }
