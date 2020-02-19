@@ -1,6 +1,6 @@
 public class PatrimonioLiquido extends Conta{
-    public PatrimonioLiquido(String nome){
-        super(nome);
+    public PatrimonioLiquido(String id, String nome){
+        super(id, nome);
     }    
     
     public void creditar(double valor){

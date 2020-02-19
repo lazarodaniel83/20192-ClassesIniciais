@@ -15,11 +15,11 @@ public class Balanco{
     }     
     
     private void asm(){
-        this.addConta(new Ativo("CAIXA"));
-        this.addConta(new Ativo("IMOVEIS"));
-        this.addConta(new Ativo("VEICULOS")); 
-        this.addConta(new Passivo("EMPRESTIMO"));   
-        this.addConta(new PatrimonioLiquido("CAPITAL SOCIAL"));         
+        this.addConta(new Passivo("2.0","EMPRESTIMO"));   
+        this.addConta(new Ativo("1.0", "CAIXA"));
+        this.addConta(new Ativo("1.1","IMOVEIS"));
+        this.addConta(new PatrimonioLiquido("3.0","CAPITAL SOCIAL"));         
+        this.addConta(new Ativo("1.2","VEICULOS")); 
         
     }    
     
@@ -37,6 +37,8 @@ public class Balanco{
     
     public String toString(){
         String str = "";
+        Ordenador ordenador = new Ordenador();
+        ordenador.ordenar(this.contas);
         for(Conta c : this.contas)
             str += (c + "\n");
         return str;    

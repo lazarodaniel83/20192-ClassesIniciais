@@ -1,6 +1,6 @@
 public class Passivo extends Conta{
-    public Passivo(String nome){
-        super(nome);
+    public Passivo(String id, String nome){
+        super(id, nome);
     }   
     
     public void creditar(double valor){

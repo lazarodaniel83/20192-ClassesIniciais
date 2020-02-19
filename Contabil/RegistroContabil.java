@@ -27,9 +27,9 @@ public class RegistroContabil{
         return this.cnpjEmpresa;
     }     
     
-    public void registrarFato(String descricao, String nomeCredito, 
+    public void registrarFato(int indice, String descricao, String nomeCredito, 
                               String nomeDebito, double valor){
-      this.livro.registrarFato(descricao, this.balanco.findByName(nomeCredito), 
+      this.livro.registrarFato(indice, descricao, this.balanco.findByName(nomeCredito), 
                                this.balanco.findByName(nomeDebito), valor);
       this.balanco.ajustar(nomeCredito, nomeDebito, valor);
     };  

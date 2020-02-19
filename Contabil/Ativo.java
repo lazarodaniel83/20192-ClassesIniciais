@@ -1,6 +1,6 @@
 public class Ativo extends Conta{
-    public Ativo(String nome){
-        super(nome);
+    public Ativo(String id, String nome){
+        super(id, nome);
     }    
     
     public void creditar(double valor){

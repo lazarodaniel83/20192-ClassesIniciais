@@ -1,8 +1,11 @@
    public class LivroContabil{
+       
+    private int index;   
     private Lancamento[] lancamentos;
     
     public LivroContabil(){
         this.lancamentos = new Lancamento[0];
+        this.index = 1;
     } 
     
     
@@ -15,13 +18,15 @@
     }    
     
     
-    public void registrarFato(String descricao, Conta credito, 
+    public void registrarFato(int indice, String descricao, Conta credito, 
                               Conta debito, double valor){
-      this.addLancamento(new Lancamento(descricao, credito, debito, valor));
+      this.addLancamento(new Lancamento(indice, descricao, credito, debito, valor));
     }; 
     
     public String toString(){
         String str = "";
+        Ordenador ordenador = new Ordenador();
+        ordenador.ordenar(this.lancamentos);        
         for(Lancamento l : this.lancamentos)
             str += (l + "\n\n");
         return str;    
