@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Mapa
+comment1.params=
+comment1.target=Pixel[][]\ getPixels()
+comment2.params=x\ y
+comment2.target=Pixel\ getPixel(int,\ int)
+comment3.params=
+comment3.target=int\ getAltura()
+comment4.params=
+comment4.target=int\ getLargura()
+comment5.params=x\ y\ fragmento
+comment5.target=double\ getSimilaridade(int,\ int,\ Fragmento)
+comment6.params=fragmento
+comment6.target=double\ getSimilaridade(Fragmento)
+numComments=7
