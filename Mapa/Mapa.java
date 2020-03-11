@@ -2,6 +2,7 @@ public abstract class Mapa{
     
     public abstract Pixel[][] getPixels();
     public abstract Pixel getPixel(int x, int y);
+    public abstract void setPixel(int x, int y, Pixel pixel);
     
     public int getAltura(){
         return this.getPixels().length;

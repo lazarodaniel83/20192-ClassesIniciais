@@ -1,7 +1,11 @@
 #BlueJ class context
 comment0.target=MapaCMYK
-comment1.params=
-comment1.target=Pixel[][]\ getPixels()
-comment2.params=x\ y
-comment2.target=Pixel\ getPixel(int,\ int)
-numComments=3
+comment1.params=altura\ largura
+comment1.target=MapaCMYK(int,\ int)
+comment2.params=
+comment2.target=Pixel[][]\ getPixels()
+comment3.params=x\ y
+comment3.target=Pixel\ getPixel(int,\ int)
+comment4.params=x\ y\ pixel
+comment4.target=void\ setPixel(int,\ int,\ Pixel)
+numComments=5
